@@ -17,17 +17,15 @@ const Server = http.createServer((req, res)=>{
     res.write('<html>')
     res.write('<head><title>Node JS</title></head>')
     res.write('<body><h1>Wellcome</h1></body>')
+    res.write('<form>')
+    res.write('<input type="text" name="Username" placeholder="Enter your Details">')
+      res.write('<input type="text" name="UserEmail" placeholder="Enter your Details">')
+      res.write('<submit type="submit" value="submit">')
+    res.write('</form>')
     res.write('</html>')
    return res.end()
     }
-    else if(req.url==='/About'){
-    res.setHeader('Content-Type','text/html')
-    res.write('<html>')
-    res.write('<head><title>Node JS</title></head>')
-    res.write('<body><h1>Node Products</h1></body>')
-    res.write('</html>')
-   return res.end()
-    }
+ 
     res.setHeader('Content-Type','text/html')
     res.write('<html>')
     res.write('<head><title>Node JS</title></head>')
@@ -41,4 +39,9 @@ Server.listen(port,()=>{
     console.log(`server runing at http://localhost:${port}`
         
     )
+    // console.log("najmul akash")
+    // console.log("Print ffff")
+    // console.log("function 1")
+    // console.log("fuction 2")
+    // console.log("fuction 3")
 })   
